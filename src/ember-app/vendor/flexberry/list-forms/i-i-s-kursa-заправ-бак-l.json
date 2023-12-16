@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursa-заправ-бак-e",
+  "editForm": "i-i-s-kursa-заправ-бак-e",
+  "external": false,
+  "caption": "Заправ бак",
+  "name": "IISKursaЗаправБакL",
+  "className": "ЗаправБакL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-заправ-бак",
+      "modelProjection": "ЗаправБакL"
+    }
+  ]
+}

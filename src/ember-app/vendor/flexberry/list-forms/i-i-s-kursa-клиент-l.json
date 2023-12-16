@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursa-клиент-e",
+  "editForm": "i-i-s-kursa-клиент-e",
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISKursaКлиентL",
+  "className": "КлиентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-клиент",
+      "modelProjection": "КлиентL"
+    }
+  ]
+}

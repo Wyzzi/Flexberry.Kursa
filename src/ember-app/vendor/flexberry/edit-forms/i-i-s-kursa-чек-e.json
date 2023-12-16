@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Чек",
+  "name": "IISKursaЧекE",
+  "className": "ЧекE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-чек",
+      "modelProjection": "ЧекE"
+    }
+  ]
+}

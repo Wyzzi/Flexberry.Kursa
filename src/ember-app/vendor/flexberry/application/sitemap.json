@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Kursa",
+  "applicationTitle": "Kursa",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursa",
+      "caption": "Kursa",
+      "title": "Kursa",
+      "children": [
+        {
+          "link": "i-i-s-kursa-товары-спр-l",
+          "menuName": null,
+          "caption": "Товары спр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-банк-дан-l",
+          "menuName": null,
+          "caption": "Банк дан",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-чек-l",
+          "menuName": null,
+          "caption": "Чек",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-заправка-авто-l",
+          "menuName": null,
+          "caption": "Заправка авто",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-заправ-бак-l",
+          "menuName": null,
+          "caption": "Заправ бак",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursa-карта-лояль-l",
+          "menuName": null,
+          "caption": "Карта лояль",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

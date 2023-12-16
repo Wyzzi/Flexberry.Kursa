@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursa-товары-спр-e",
+  "editForm": "i-i-s-kursa-товары-спр-e",
+  "external": false,
+  "caption": "Товары спр",
+  "name": "IISKursaТоварыСпрL",
+  "className": "ТоварыСпрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-товары-спр",
+      "modelProjection": "ТоварыСпрL"
+    }
+  ]
+}

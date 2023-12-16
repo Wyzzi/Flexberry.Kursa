@@ -1,0 +1,132 @@
+﻿{
+  "name": "IISKursaКлиент",
+  "modelName": "i-i-s-kursa-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.Kursa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "eMail",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаРожд",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номТел",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "банкДан",
+      "relatedTo": "i-i-s-kursa-банк-дан",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "картаЛояль",
+      "relatedTo": "i-i-s-kursa-карта-лояль",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-kursa-клиент",
+      "attrs": [
+        {
+          "name": "наимен",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номТел",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eMail",
+          "caption": "EMail",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-kursa-клиент",
+      "attrs": [
+        {
+          "name": "наимен",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номТел",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eMail",
+          "caption": "EMail",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

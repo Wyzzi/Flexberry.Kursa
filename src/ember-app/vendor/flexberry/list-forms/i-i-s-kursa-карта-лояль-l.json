@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursa-карта-лояль-e",
+  "editForm": "i-i-s-kursa-карта-лояль-e",
+  "external": false,
+  "caption": "Карта лояль",
+  "name": "IISKursaКартаЛояльL",
+  "className": "КартаЛояльL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-карта-лояль",
+      "modelProjection": "КартаЛояльL"
+    }
+  ]
+}

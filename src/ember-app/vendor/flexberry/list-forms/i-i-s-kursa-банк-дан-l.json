@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursa-банк-дан-e",
+  "editForm": "i-i-s-kursa-банк-дан-e",
+  "external": false,
+  "caption": "Банк дан",
+  "name": "IISKursaБанкДанL",
+  "className": "БанкДанL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-банк-дан",
+      "modelProjection": "БанкДанL"
+    }
+  ]
+}

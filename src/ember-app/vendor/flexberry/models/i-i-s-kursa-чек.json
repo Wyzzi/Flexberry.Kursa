@@ -1,0 +1,104 @@
+﻿{
+  "name": "IISKursaЧек",
+  "modelName": "i-i-s-kursa-чек",
+  "className": "Чек",
+  "nameSpace": "IIS.Kursa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправкаАвто",
+      "relatedTo": "i-i-s-kursa-заправка-авто",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-kursa-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧТовары",
+      "relatedTo": "i-i-s-kursa-т-ч-товары",
+      "inverse": "чек"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЧекE",
+      "modelName": "i-i-s-kursa-чек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер чека",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма чека",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧТоварыE",
+          "caption": "Товары",
+          "name": "тЧТовары",
+          "relatedTo": "i-i-s-kursa-т-ч-товары",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЧекL",
+      "modelName": "i-i-s-kursa-чек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер чека",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма чека",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Карта лояль",
+  "name": "IISKursaКартаЛояльE",
+  "className": "КартаЛояльE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-карта-лояль",
+      "modelProjection": "КартаЛояльE"
+    }
+  ]
+}

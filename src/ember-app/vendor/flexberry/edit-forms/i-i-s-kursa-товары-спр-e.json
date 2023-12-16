@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Товары спр",
+  "name": "IISKursaТоварыСпрE",
+  "className": "ТоварыСпрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-товары-спр",
+      "modelProjection": "ТоварыСпрE"
+    }
+  ]
+}

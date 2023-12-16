@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Заправка авто",
+  "name": "IISKursaЗаправкаАвтоE",
+  "className": "ЗаправкаАвтоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-заправка-авто",
+      "modelProjection": "ЗаправкаАвтоE"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+﻿{
+  "name": "IISKursaЗаправкаАвто",
+  "modelName": "i-i-s-kursa-заправка-авто",
+  "className": "ЗаправкаАвто",
+  "nameSpace": "IIS.Kursa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колТоп",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номКол",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номШл",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправБак",
+      "relatedTo": "i-i-s-kursa-заправ-бак",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаправкаАвтоE",
+      "modelName": "i-i-s-kursa-заправка-авто",
+      "attrs": [
+        {
+          "name": "номКол",
+          "caption": "Номер колонки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номШл",
+          "caption": "Номер шланга",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "колТоп",
+          "caption": "Количество топлива",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаправкаАвтоL",
+      "modelName": "i-i-s-kursa-заправка-авто",
+      "attrs": [
+        {
+          "name": "номКол",
+          "caption": "Номер колонки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номШл",
+          "caption": "Номер шланга",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "колТоп",
+          "caption": "Количество топлива",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

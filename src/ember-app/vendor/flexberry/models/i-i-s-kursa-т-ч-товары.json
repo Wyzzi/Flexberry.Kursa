@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISKursaТЧТовары",
+  "modelName": "i-i-s-kursa-т-ч-товары",
+  "className": "ТЧТовары",
+  "nameSpace": "IIS.Kursa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товарыСпр",
+      "relatedTo": "i-i-s-kursa-товары-спр",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "чек",
+      "relatedTo": "i-i-s-kursa-чек",
+      "inverse": "тЧТовары"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧТоварыE",
+      "modelName": "i-i-s-kursa-т-ч-товары",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТоварыСпр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наим",
+              "caption": "ДА",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "цена",
+              "caption": "ДА",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ДА",
+          "name": "товарыСпр",
+          "relatedTo": "i-i-s-kursa-товары-спр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Заправ бак",
+  "name": "IISKursaЗаправБакE",
+  "className": "ЗаправБакE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursa-заправ-бак",
+      "modelProjection": "ЗаправБакE"
+    }
+  ]
+}
