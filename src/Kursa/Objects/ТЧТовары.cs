@@ -32,7 +32,8 @@ namespace IIS.Kursa
     [View("ТЧТоварыE", new string[] {
             "ТоварыСпр.Наим as \'Товар\'",
             "ТоварыСпр.Цена as \'Цена\'",
-            "Количество as \'Количество\'"})]
+            "Количество as \'Количество\'",
+            "ТоварыСпр as \'Товар\'"})]
     public class ТЧТовары : ICSSoft.STORMNET.DataObject
     {
         

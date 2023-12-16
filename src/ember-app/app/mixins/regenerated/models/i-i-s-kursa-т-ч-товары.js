@@ -39,7 +39,7 @@ export let defineProjections = function (modelClass) {
     товарыСпр: belongsTo('i-i-s-kursa-товары-спр', 'Товар', {
       наим: attr('Товар', { index: 0 }),
       цена: attr('Цена', { index: 1 })
-    }, { index: -1, hidden: true }),
+    }, { index: 3 }),
     количество: attr('Количество', { index: 2 })
   });
 };
