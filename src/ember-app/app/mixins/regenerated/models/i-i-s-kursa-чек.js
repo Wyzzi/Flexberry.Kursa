@@ -54,6 +54,9 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ЧекE', 'i-i-s-kursa-чек', {
     номер: attr('Номер чека', { index: 0 }),
     сумма: attr('Сумма чека', { index: 1 }),
+    клиент: belongsTo('i-i-s-kursa-клиент', 'ФИО', {
+      наимен: attr('ФИО', { index: 2 })
+    }, { index: -1, hidden: true }),
     тЧТовары: hasMany('i-i-s-kursa-т-ч-товары', 'Товары', {
       товарыСпр: belongsTo('i-i-s-kursa-товары-спр', 'Товар', {
         наим: attr('Товар', { index: 0 }),
@@ -65,6 +68,9 @@ export let defineProjections = function (modelClass) {
 
   modelClass.defineProjection('ЧекL', 'i-i-s-kursa-чек', {
     номер: attr('Номер чека', { index: 0 }),
-    сумма: attr('Сумма чека', { index: 1 })
+    сумма: attr('Сумма чека', { index: 1 }),
+    клиент: belongsTo('i-i-s-kursa-клиент', 'ФИО', {
+      наимен: attr('ФИО', { index: 2 })
+    }, { index: -1, hidden: true })
   });
 };

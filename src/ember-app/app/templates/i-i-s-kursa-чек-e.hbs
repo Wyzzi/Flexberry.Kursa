@@ -45,6 +45,16 @@
     {{flexberry-validationmessage error=(v-get validationModel "сумма" "message")}}
   </div>
   <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.клиент.наимен
+      class=(if (v-get validationModel.клиент "наимен" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursa-чек-e.клиент.наимен-caption")
+      data-test-i-i-s-kursa-чек-e-клиент-наимен=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.клиент "наимен" "message")}}
+  </div>
+  <div class="field">
     <label>{{t "forms.i-i-s-kursa-чек-e.тЧТовары-caption"}}</label>
     {{flexberry-groupedit
       componentName="тЧТоварыGroupEdit"

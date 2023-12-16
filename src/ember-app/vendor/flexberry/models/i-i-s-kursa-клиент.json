@@ -90,7 +90,50 @@
           "index": 3
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БанкДан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номКарт",
+              "caption": "вф",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "вф",
+          "name": "банкДан",
+          "relatedTo": "i-i-s-kursa-банк-дан",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КартаЛояль",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "ном",
+              "caption": "net",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "net",
+          "name": "картаЛояль",
+          "relatedTo": "i-i-s-kursa-карта-лояль",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
@@ -122,7 +165,29 @@
           "index": 3
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БанкДан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номКарт",
+              "caption": "da",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "da",
+          "name": "банкДан",
+          "relatedTo": "i-i-s-kursa-банк-дан",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

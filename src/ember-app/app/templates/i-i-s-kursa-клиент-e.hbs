@@ -65,4 +65,24 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "датаРожд" "message")}}
   </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.банкДан.номКарт
+      class=(if (v-get validationModel.банкДан "номКарт" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursa-клиент-e.банкДан.номКарт-caption")
+      data-test-i-i-s-kursa-клиент-e-банкДан-номКарт=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.банкДан "номКарт" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.картаЛояль.ном
+      class=(if (v-get validationModel.картаЛояль "ном" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursa-клиент-e.картаЛояль.ном-caption")
+      data-test-i-i-s-kursa-клиент-e-картаЛояль-ном=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.картаЛояль "ном" "message")}}
+  </div>
 </form>

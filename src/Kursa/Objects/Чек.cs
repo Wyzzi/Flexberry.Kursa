@@ -30,12 +30,14 @@ namespace IIS.Kursa
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ЧекE", new string[] {
             "Номер as \'Номер чека\'",
-            "Сумма as \'Сумма чека\'"})]
+            "Сумма as \'Сумма чека\'",
+            "Клиент.Наимен as \'ФИО\'"})]
     [AssociatedDetailViewAttribute("ЧекE", "ТЧТовары", "ТЧТоварыE", true, "", "Товары", true, new string[] {
             ""})]
     [View("ЧекL", new string[] {
             "Номер as \'Номер чека\'",
-            "Сумма as \'Сумма чека\'"})]
+            "Сумма as \'Сумма чека\'",
+            "Клиент.Наимен as \'ФИО\'"})]
     public class Чек : ICSSoft.STORMNET.DataObject
     {
         

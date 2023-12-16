@@ -60,13 +60,22 @@ export let defineProjections = function (modelClass) {
     наимен: attr('ФИО', { index: 0 }),
     номТел: attr('Номер телефона', { index: 1 }),
     eMail: attr('EMail', { index: 2 }),
-    датаРожд: attr('Дата рождения', { index: 3 })
+    датаРожд: attr('Дата рождения', { index: 3 }),
+    банкДан: belongsTo('i-i-s-kursa-банк-дан', 'вф', {
+      номКарт: attr('вф', { index: 4 })
+    }, { index: -1, hidden: true }),
+    картаЛояль: belongsTo('i-i-s-kursa-карта-лояль', 'net', {
+      ном: attr('net', { index: 5 })
+    }, { index: -1, hidden: true })
   });
 
   modelClass.defineProjection('КлиентL', 'i-i-s-kursa-клиент', {
     наимен: attr('ФИО', { index: 0 }),
     номТел: attr('Номер телефона', { index: 1 }),
     eMail: attr('EMail', { index: 2 }),
-    датаРожд: attr('Дата рождения', { index: 3 })
+    датаРожд: attr('Дата рождения', { index: 3 }),
+    банкДан: belongsTo('i-i-s-kursa-банк-дан', 'da', {
+      номКарт: attr('da', { index: 4 })
+    }, { index: -1, hidden: true })
   });
 };
