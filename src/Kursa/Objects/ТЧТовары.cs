@@ -30,9 +30,9 @@ namespace IIS.Kursa
     [Caption("Т ч товары")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТЧТоварыE", new string[] {
-            "Количество as \'Количество\'",
-            "ТоварыСпр.Наим as \'ДА\'",
-            "ТоварыСпр.Цена as \'ДА\'"})]
+            "ТоварыСпр.Наим as \'Товар\'",
+            "ТоварыСпр.Цена as \'Цена\'",
+            "Количество as \'Количество\'"})]
     public class ТЧТовары : ICSSoft.STORMNET.DataObject
     {
         

@@ -22,43 +22,42 @@ export default Controller.extend({
             link: 'i-i-s-kursa-товары-спр-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-товары-спр-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-товары-спр-l.title'),
-            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-kursa-клиент-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-клиент-l.title'),
-            icon: 'file',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-kursa-банк-дан-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-банк-дан-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-банк-дан-l.title'),
-            icon: 'file',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursa-чек-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-чек-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-чек-l.title'),
-            icon: 'folder',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-kursa-заправка-авто-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-заправка-авто-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-заправка-авто-l.title'),
-            icon: 'chart bar',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-kursa-заправ-бак-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-заправ-бак-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-заправ-бак-l.title'),
-            icon: 'book',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-kursa-карта-лояль-l',
             caption: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-карта-лояль-l.caption'),
             title: i18n.t('forms.application.sitemap.kursa.i-i-s-kursa-карта-лояль-l.title'),
-            icon: 'edit',
+            icon: 'table',
             children: null
           }]
         }

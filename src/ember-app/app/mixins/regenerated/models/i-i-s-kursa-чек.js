@@ -55,11 +55,11 @@ export let defineProjections = function (modelClass) {
     номер: attr('Номер чека', { index: 0 }),
     сумма: attr('Сумма чека', { index: 1 }),
     тЧТовары: hasMany('i-i-s-kursa-т-ч-товары', 'Товары', {
-      количество: attr('Количество', { index: 0 }),
-      товарыСпр: belongsTo('i-i-s-kursa-товары-спр', 'ДА', {
-        наим: attr('ДА', { index: 1 }),
-        цена: attr('ДА', { index: 2 })
-      }, { index: -1, hidden: true })
+      товарыСпр: belongsTo('i-i-s-kursa-товары-спр', 'Товар', {
+        наим: attr('Товар', { index: 0 }),
+        цена: attr('Цена', { index: 1 })
+      }, { index: -1, hidden: true }),
+      количество: attr('Количество', { index: 2 })
     })
   });
 

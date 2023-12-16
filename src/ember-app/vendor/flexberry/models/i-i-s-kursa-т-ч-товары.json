@@ -42,7 +42,7 @@
           "name": "количество",
           "caption": "Количество",
           "hidden": false,
-          "index": 0
+          "index": 2
         }
       ],
       "belongsTo": [
@@ -55,20 +55,20 @@
           "attrs": [
             {
               "name": "наим",
-              "caption": "ДА",
+              "caption": "Товар",
               "hidden": false,
-              "index": 1
+              "index": 0
             },
             {
               "name": "цена",
-              "caption": "ДА",
+              "caption": "Цена",
               "hidden": false,
-              "index": 2
+              "index": 1
             }
           ],
           "index": -1,
           "type": "default",
-          "caption": "ДА",
+          "caption": "Товар",
           "name": "товарыСпр",
           "relatedTo": "i-i-s-kursa-товары-спр",
           "inverse": null
